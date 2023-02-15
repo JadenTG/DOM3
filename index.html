@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Macabre</title>
+</head>
+<body>
+
+    <h1>About Me</h1>
+
+    <ul>
+        <li>Nickname: <span id="nickname"></span>
+        <li>Favorites: <span id="favorites"></span>
+        <li>Hometown: <span id="hometown"></span>
+    </ul>
+
+    <script>
+        document.getElementsByTagName('body')[0].style.fontFamily = "Arial, sans-serif";
+
+        document.getElementById('nickname').textContent = " Jay"
+        document.getElementById('favorites').textContent = " Music"
+        document.getElementById('hometown').textContent = " Fedral Way"
+
+        var lists = document.getElementsByTagName("li"); 
+            for(i = 0; i < lists.length; i++){
+                lists[i].classList = "list-item";
+            }
+    </script>
+</body>
+</html>
